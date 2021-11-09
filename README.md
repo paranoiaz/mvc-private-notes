@@ -1,5 +1,5 @@
 # MVC Private Notes
-A fast and reliable platform to store your notes on. Supports multiple user sessions and stores all data locally in a SQL server.
+A fast and reliable web application to store your notes on. Supports multiple user sessions and stores all data locally in a SQL server.
 
 **Dependencies**
 ```
