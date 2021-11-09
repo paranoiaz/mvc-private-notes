@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&display=swap");
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0E0B16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Catamaran";
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.home-container {
+    width: 100%;
+    height: 100%;
+    background-color: #191329;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home-container .nav-bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    background-color: #231a3b;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.home-container .nav-bar .right-nav-container {
+    width: 140px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .nav-bar .right-nav-container .username-container {
+    color: #E7DFDD;
+    font-weight: 800;
+    user-select: none;
+}
+
+.home-container .nav-bar .right-nav-container .create-button {
+    width: 120px;
+    height: 40px;
+    color: #E7DFDD;
+    background-color: #01bfee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 800;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+.home-container .nav-bar .right-nav-container .signout-button {
+    width: 120px;
+    height: 40px;
+    color: #E7DFDD;
+    background-color: #df2525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 800;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+.home-container .nav-bar .right-nav-container .create-button:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.home-container .nav-bar .right-nav-container .signout-button:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.home-container .notes-container {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.home-container .notes-container .note-container {
+    width: 300px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border-radius: 3%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home-container .notes-container .note-container .title-container {
+    width: 100%;
+    height: 20%;
+    background-color: #ecda73;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-container .notes-container .note-container .title-container .title-text {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.home-container .notes-container .note-container .title-container .edit-button {
+    width: 50px;
+    height: 100%;
+    background-color: #c9af20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    user-select: none;
+}
+
+.home-container .notes-container .note-container .title-container .edit-button:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.home-container .notes-container .note-container .title-container .delete-button {
+    width: 50px;
+    height: 100%;
+    background-color: #c9af20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    user-select: none;
+}
+
+.home-container .notes-container .note-container .title-container .delete-button:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.home-container .notes-container .note-container .description-container {
+    width: 100%;
+    height: 80%;
+    background-color: #F9ED87;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.home-container .notes-container .note-container .description-container .description-text {
+    word-wrap: break-word;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&display=swap");
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0E0B16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Catamaran";
+    font-weight: 800;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.home-container {
+    width: 400px;
+    height: 500px;
+    background-color: #FFFFFF;
+    display: block;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home-container .top-container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.home-container .bottom-container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.home-container .top-container .logo-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home-container .top-container .logo-text {
+    margin: 0px;
+    padding: 0px;
+    color: #b318f0;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.home-container .top-container .header-text {
+    margin: 0px;
+    padding: 0px;
+    color: #8f13c0;
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: italic;
+    animation: rainbow-text 6s ease-in-out infinite;
+}
+
+.home-container .bottom-container .button-container {
+    width: 240px;
+    height: 55px;
+    background-color: #4717F6;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home-container .bottom-container .button-container:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}
+
+.home-container .bottom-container  .button-container .login-button {
+    color: #E7DFDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .bottom-container  .button-container .signup-button {
+    color: #E7DFDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes rainbow-text {
+    20% {
+        color: blue;
+    }
+    40% {
+        color: green;
+    }
+    60% {
+        color: red;
+    }
+    80% {
+        color: orange;
+    }
+}

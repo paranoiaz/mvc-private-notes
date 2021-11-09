@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&display=swap");
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0E0B16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Catamaran";
+    font-weight: 800;
+    user-select: none;
+}
+
+.home-container {
+    width: 400px;
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home-container .create-container {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .create-container form input {
+    width: 95%;
+    height: 30px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.home-container .create-container form button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    color: #E7DFDD;
+    font-family: "Catamaran";
+    font-weight: 800;
+    font-size: 16px;
+    background-color: #4717F6;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.home-container .create-container form button:hover {
+    filter: brightness(80%);
+    transition: 0.3s;
+}

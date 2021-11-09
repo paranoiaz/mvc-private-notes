@@ -1,0 +1,30 @@
+@using Models;
+@{
+    Note note = (Note)ViewData["Note"];
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Note - Private Notes</title>
+    <link rel="stylesheet" href="../../css/styles-create-edit.css">
+</head>
+<body>
+    <div class="home-container">
+        <div class="create-container">
+            <form action="/notes/edit" method="post">
+                <input type="text" placeholder="Identifier" name="identifier" value="@(note.Id)" readonly style="background-color: #AAAAAA;">
+                <br>
+                <input type="text" placeholder="Title" name="title" value="@(note.Title)" required>
+                <br>
+                <input type="text" placeholder="Description" name="description" value="@(note.Content)" required>
+                <br><br>
+                <button type="submit">Edit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

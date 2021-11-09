@@ -1,0 +1,67 @@
+﻿@using Models;
+@{
+    string username = (string)ViewData["Username"];
+    List<Note> notes = (List<Note>)ViewData["Notes"];
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - Private Notes</title>
+    <link rel="stylesheet" href="../../css/styles-notes.css">
+</head>
+<body>
+    <div class="home-container">
+        <nav class="nav-bar">
+            <div class="right-nav-container">
+                <div class="username-container">
+                    Logged in as @username
+                </div>
+            </div>
+            <div class="right-nav-container">
+                <a class="create-button" href="/notes/create">
+                    Create Note
+                </a>
+            </div>
+            <div class="right-nav-container">
+                <a class="signout-button" href="/home/logout">
+                    Log Out
+                </a>
+            </div>
+        </nav>
+        <div class="notes-container">
+            @if (notes != null)
+            {
+                @foreach (var note in notes)
+                {
+                                            <div class="note-container">
+                                                <div class="title-container">
+                                                    <div class="edit-button">
+                                                        <a href="/notes/edit/@(note.Id)">
+                                                            Edit
+                                                        </a>
+                                                    </div>
+                                                    <div class="delete-button">
+                                                        <a href="/notes/delete/@(note.Id)">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                    <span class="title-text">
+                                @note.Title
+                                                    </span>
+                                                </div>
+                                                <div class="description-container">
+                                                    <span class="description-text">
+                                @note.Content
+                                                    </span>
+                                                </div>
+                                            </div>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
