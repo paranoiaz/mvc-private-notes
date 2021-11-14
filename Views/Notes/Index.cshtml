@@ -1,4 +1,4 @@
-﻿@using Models;
+@using Models;
 @{
     string username = (string)ViewData["Username"];
     List<Note> notes = (List<Note>)ViewData["Notes"];
@@ -37,28 +37,28 @@
             {
                 @foreach (var note in notes)
                 {
-                                            <div class="note-container">
-                                                <div class="title-container">
-                                                    <div class="edit-button">
-                                                        <a href="/notes/edit/@(note.Id)">
-                                                            Edit
-                                                        </a>
-                                                    </div>
-                                                    <div class="delete-button">
-                                                        <a href="/notes/delete/@(note.Id)">
-                                                            Delete
-                                                        </a>
-                                                    </div>
-                                                    <span class="title-text">
+                    <div class="note-container">
+                        <div class="title-container">
+                            <div class="edit-button">
+                                <a href="/notes/edit/@(note.Id)">
+                                    Edit
+                                </a>
+                            </div>
+                            <div class="delete-button">
+                                <a href="/notes/delete/@(note.Id)">
+                                    Delete
+                                </a>
+                            </div>
+                            <span class="title-text">
                                 @note.Title
-                                                    </span>
-                                                </div>
-                                                <div class="description-container">
-                                                    <span class="description-text">
+                            </span>
+                        </div>
+                        <div class="description-container">
+                            <span class="description-text">
                                 @note.Content
-                                                    </span>
-                                                </div>
-                                            </div>
+                            </span>
+                        </div>
+                    </div>
                 }
             }
         </div>
