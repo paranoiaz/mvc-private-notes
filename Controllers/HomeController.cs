@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Data;
@@ -95,6 +95,11 @@ namespace private_notes.Controllers
             if (user != null)
             {
                 return RedirectToAction("signup", new { error = "Username already taken." });
+            }
+
+            if (username.Length > 16)
+            {
+                return RedirectToAction("signup", new { error = "Username maximum 16 characters." });
             }
 
             if (password.Length < 8)
